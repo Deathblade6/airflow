@@ -1,0 +1,25 @@
+[2021-03-10 07:01:20,396] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-14T00:00:00+00:00 [queued]>
+[2021-03-10 07:01:20,402] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-14T00:00:00+00:00 [queued]>
+[2021-03-10 07:01:20,402] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:01:20,402] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 07:01:20,402] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:01:20,409] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-01-14T00:00:00+00:00
+[2021-03-10 07:01:20,411] {standard_task_runner.py:51} INFO - Started process 42349 to run task
+[2021-03-10 07:01:20,416] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-01-14T00:00:00+00:00', '--job-id', '82', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmpkpv3p79k']
+[2021-03-10 07:01:20,416] {standard_task_runner.py:76} INFO - Job 82: Subtask extract_users
+[2021-03-10 07:01:20,538] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-01-14T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-10 07:01:20,680] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-14T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-14T00:00:00+00:00
+[2021-03-10 07:01:20,681] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 07:01:20,684] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 07:01:20,685] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 07:01:21,159] {http.py:110} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Billy","last":"Davidson"},"location":{"street":{"number":9083,"name":"Harrison Ct"},"city":"Ballarat","state":"South Australia","country":"Australia","postcode":6673,"coordinates":{"latitude":"-89.0303","longitude":"-35.4330"},"timezone":{"offset":"+11:00","description":"Magadan, Solomon Islands, New Caledonia"}},"email":"billy.davidson@example.com","login":{"uuid":"13fe5193-5698-444e-bbf0-74f369a70819","username":"yellowbird495","password":"pookey","salt":"uyLHqs5C","md5":"ef23b10ce895a8f3f50ca172a4c1a2b3","sha1":"18f52dd3c414f305d08f756d1fe917db4fdb89a8","sha256":"ff064c091ff97a9b5351d3c84c3fd21d4de1eeb6bd16aa717d3d61e539c51b69"},"dob":{"date":"1958-04-08T09:40:22.137Z","age":63},"registered":{"date":"2019-03-08T04:02:53.228Z","age":2},"phone":"03-5640-5152","cell":"0442-442-203","id":{"name":"TFN","value":"833638436"},"picture":{"large":"https://randomuser.me/api/portraits/men/24.jpg","medium":"https://randomuser.me/api/portraits/med/men/24.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/24.jpg"},"nat":"AU"}],"info":{"seed":"a71d6abf165328a7","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 07:01:21,173] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210114T000000, start_date=20210310T070120, end_date=20210310T070121
+[2021-03-10 07:01:21,189] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 07:01:21,201] {local_task_job.py:118} INFO - Task exited with return code 0

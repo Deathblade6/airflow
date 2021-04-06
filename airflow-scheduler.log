@@ -1,0 +1,989 @@
+2021-04-05 05:10:12,914 INFO - Starting the scheduler
+2021-04-05 05:10:12,918 INFO - Processing each file at most -1 times
+2021-04-05 05:10:13,474 INFO - Launched DagFileProcessorManager with pid: 1957
+2021-04-05 05:10:13,489 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 05:10:13,647 INFO - Marked 1 SchedulerJob instances as failed
+2021-04-05 05:10:13,731 INFO - Configured default timezone Timezone('UTC')
+2021-04-05 05:10:13,849 INFO - Reset the following 18 orphaned TaskInstances:
+	<TaskInstance: dumb_me.main 2021-04-02 04:50:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 05:40:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:40:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:30:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:40:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:30:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:20:00+00:00 [queued]>
+	<TaskInstance: fec_lead_importer.main 2021-04-02 13:10:00+00:00 [queued]>
+	<TaskInstance: fec_lead_importer.main 2021-04-02 15:20:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 04:40:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:50:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:20:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:10:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:00:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:50:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:10:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:00:00+00:00 [queued]>
+	<TaskInstance: dumb_me.main 2021-04-02 05:50:00+00:00 [queued]>
+2021-04-05 05:10:15,519 INFO - 20 tasks up for execution:
+	<TaskInstance: dumb_me.main 2021-04-02 04:50:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 05:40:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-02 13:10:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-02 15:20:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 05:50:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:00:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:10:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:20:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:30:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:40:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:50:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:50:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:00:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:10:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:20:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:30:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:40:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-02 15:30:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.bash4 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.downloading_data 2021-04-02 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:15,539 INFO - Figuring out tasks to run in Pool(name=default_pool) with 128 open slots and 20 task instances ready to be queued
+2021-04-05 05:10:15,539 INFO - DAG xcom_dag has 0/16 running and queued tasks
+2021-04-05 05:10:15,539 INFO - DAG parallel_dag has 0/16 running and queued tasks
+2021-04-05 05:10:15,539 INFO - DAG dumb_me has 0/16 running and queued tasks
+2021-04-05 05:10:15,539 INFO - DAG dumb_me has 1/16 running and queued tasks
+2021-04-05 05:10:15,539 INFO - DAG dumb_me has 2/16 running and queued tasks
+2021-04-05 05:10:15,539 INFO - DAG dumb_me has 3/16 running and queued tasks
+2021-04-05 05:10:15,539 INFO - DAG dumb_me has 4/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 5/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 6/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 7/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 8/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 9/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 10/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 11/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 12/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 13/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG dumb_me has 14/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG fec_lead_importer has 1/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - DAG fec_lead_importer has 2/16 running and queued tasks
+2021-04-05 05:10:15,540 INFO - Setting the following tasks to queued state:
+	<TaskInstance: xcom_dag.downloading_data 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.bash4 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 04:50:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 05:40:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 05:50:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:00:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:10:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:20:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:30:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:40:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 06:50:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:00:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:10:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:20:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:30:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:40:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 07:50:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-02 13:10:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-02 15:20:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-02 15:30:00+00:00 [scheduled]>
+2021-04-05 05:10:15,591 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='downloading_data', execution_date=datetime.datetime(2021, 4, 2, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 8 and queue default
+2021-04-05 05:10:15,591 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'downloading_data', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:15,592 INFO - Sending TaskInstanceKey(dag_id='parallel_dag', task_id='bash4', execution_date=datetime.datetime(2021, 4, 2, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 4 and queue default
+2021-04-05 05:10:15,592 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'parallel_dag', 'bash4', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:15,592 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 4, 50, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,592 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T04:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,592 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 5, 40, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,593 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T05:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,593 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 5, 50, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,593 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T05:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,593 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 6, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,593 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,593 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 6, 10, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,593 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,593 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 6, 20, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,594 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,594 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 6, 30, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,594 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,594 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 6, 40, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,594 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,594 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 6, 50, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,594 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,594 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 7, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,594 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,594 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 7, 10, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,595 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,595 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 7, 20, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,595 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,595 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 7, 30, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,595 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,595 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 7, 40, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,595 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,595 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 7, 50, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,595 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,595 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 13, 10, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,595 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-02T13:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,596 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 15, 20, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,596 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-02T15:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,596 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 15, 30, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:15,596 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-02T15:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,645 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'downloading_data', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:15,652 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'parallel_dag', 'bash4', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:15,655 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T04:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,659 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T05:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,662 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T05:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,664 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,666 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,669 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,680 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,682 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,685 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T06:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,712 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,714 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,721 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,724 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,743 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,751 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T07:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,753 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-02T13:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,772 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-02T15:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:15,774 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-02T15:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:17,241 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,306 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,311 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,391 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:17,513 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,523 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,535 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,541 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,550 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,408 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,558 INFO - Filling up the DagBag from /home/airflow/airflow/dags/parallel_dag.py
+2021-04-05 05:10:17,421 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,568 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,446 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,585 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,485 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,487 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,495 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,730 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:17,761 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:19,357 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,381 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,531 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,583 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,588 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,630 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,638 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,646 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,656 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,681 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,759 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,786 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,797 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,780 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:19,958 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:20,140 INFO - 4 tasks up for execution:
+	<TaskInstance: dumb_me.main 2021-04-02 04:40:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.bash4 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.downloading_data 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:10:20,179 INFO - Figuring out tasks to run in Pool(name=default_pool) with 108 open slots and 4 task instances ready to be queued
+2021-04-05 05:10:20,189 INFO - DAG xcom_dag has 1/16 running and queued tasks
+2021-04-05 05:10:20,189 INFO - DAG parallel_dag has 1/16 running and queued tasks
+2021-04-05 05:10:20,189 INFO - DAG dumb_me has 15/16 running and queued tasks
+2021-04-05 05:10:20,189 INFO - DAG fec_lead_importer has 3/16 running and queued tasks
+2021-04-05 05:10:20,189 INFO - Setting the following tasks to queued state:
+	<TaskInstance: xcom_dag.downloading_data 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.bash4 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: dumb_me.main 2021-04-02 04:40:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:10:20,221 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='downloading_data', execution_date=datetime.datetime(2021, 4, 4, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 8 and queue default
+2021-04-05 05:10:20,228 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'downloading_data', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:20,228 INFO - Sending TaskInstanceKey(dag_id='parallel_dag', task_id='bash4', execution_date=datetime.datetime(2021, 4, 4, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 4 and queue default
+2021-04-05 05:10:20,229 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'parallel_dag', 'bash4', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:20,229 INFO - Sending TaskInstanceKey(dag_id='dumb_me', task_id='main', execution_date=datetime.datetime(2021, 4, 2, 4, 40, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:20,229 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T04:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:20,229 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:20,229 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:20,236 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'downloading_data', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:20,238 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'parallel_dag', 'bash4', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:20,241 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'dumb_me', 'main', '2021-04-02T04:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:20,246 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:10:20,302 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 04:50:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 05:50:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 07:30:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 07:40:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 06:20:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 06:40:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 07:10:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 06:30:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 06:00:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 06:10:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 05:40:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 07:50:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,303 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 07:20:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,304 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 07:00:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,304 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 06:50:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:20,398 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 04:50:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,437 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 05:40:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,438 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 06:00:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,439 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 07:40:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,439 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 07:30:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,452 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 06:40:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,454 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 06:30:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,504 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 06:20:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,505 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 07:50:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,506 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 07:20:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,518 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 07:10:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,519 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 07:00:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,519 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 06:50:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,519 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 06:10:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:20,520 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 05:50:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:21,317 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:21,345 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:21,352 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:10:21,399 INFO - Filling up the DagBag from /home/airflow/airflow/dags/parallel_dag.py
+2021-04-05 05:10:22,616 ERROR - Failed to execute task dag_id could not be found: dumb_me. Either the dag did not exist or it failed to parse..
+2021-04-05 05:10:23,039 INFO - Executor reports execution of dumb_me.main execution_date=2021-04-02 04:40:00+00:00 exited with status failed for try_number 1
+2021-04-05 05:10:23,139 ERROR - Executor reports task instance <TaskInstance: dumb_me.main 2021-04-02 04:40:00+00:00 [queued]> finished (failed) although the task says its queued. (Info: None) Was the task killed externally?
+2021-04-05 05:10:26,042 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-02 15:30:00+00:00: scheduled__2021-04-02T15:30:00+00:00, externally triggered: False> failed
+2021-04-05 05:10:26,089 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-02 15:20:00+00:00: scheduled__2021-04-02T15:20:00+00:00, externally triggered: False> failed
+2021-04-05 05:10:26,138 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-02 13:10:00+00:00: scheduled__2021-04-02T13:10:00+00:00, externally triggered: False> failed
+2021-04-05 05:10:26,414 INFO - 5 tasks up for execution:
+	<TaskInstance: parallel_dag.processing_tasks.bash3 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.processing_tasks.bash2 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_c 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_b 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_a 2021-04-02 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:26,436 INFO - Figuring out tasks to run in Pool(name=default_pool) with 109 open slots and 5 task instances ready to be queued
+2021-04-05 05:10:26,436 INFO - DAG xcom_dag has 1/16 running and queued tasks
+2021-04-05 05:10:26,436 INFO - DAG xcom_dag has 2/16 running and queued tasks
+2021-04-05 05:10:26,436 INFO - DAG xcom_dag has 3/16 running and queued tasks
+2021-04-05 05:10:26,436 INFO - DAG parallel_dag has 1/16 running and queued tasks
+2021-04-05 05:10:26,436 INFO - DAG parallel_dag has 2/16 running and queued tasks
+2021-04-05 05:10:26,437 INFO - Setting the following tasks to queued state:
+	<TaskInstance: xcom_dag.processing_tasks.training_model_c 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_b 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_a 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.processing_tasks.bash3 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.processing_tasks.bash2 2021-04-02 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:26,447 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='processing_tasks.training_model_c', execution_date=datetime.datetime(2021, 4, 2, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 5 and queue default
+2021-04-05 05:10:26,447 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_c', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:26,448 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='processing_tasks.training_model_b', execution_date=datetime.datetime(2021, 4, 2, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 5 and queue default
+2021-04-05 05:10:26,448 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_b', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:26,448 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='processing_tasks.training_model_a', execution_date=datetime.datetime(2021, 4, 2, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 5 and queue default
+2021-04-05 05:10:26,448 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_a', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:26,448 INFO - Sending TaskInstanceKey(dag_id='parallel_dag', task_id='processing_tasks.bash3', execution_date=datetime.datetime(2021, 4, 2, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 2 and queue default
+2021-04-05 05:10:26,448 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'parallel_dag', 'processing_tasks.bash3', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:26,448 INFO - Sending TaskInstanceKey(dag_id='parallel_dag', task_id='processing_tasks.bash2', execution_date=datetime.datetime(2021, 4, 2, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 2 and queue default
+2021-04-05 05:10:26,448 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'parallel_dag', 'processing_tasks.bash2', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:26,455 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_c', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:26,458 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_b', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:26,461 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_a', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:26,464 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'parallel_dag', 'processing_tasks.bash3', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:26,466 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'parallel_dag', 'processing_tasks.bash2', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:26,470 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-02 15:20:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:26,496 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-02 15:30:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:26,496 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-02 13:10:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:26,496 INFO - Executor reports execution of parallel_dag.bash4 execution_date=2021-04-02 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:26,496 INFO - Executor reports execution of xcom_dag.downloading_data execution_date=2021-04-02 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:26,556 WARNING - DagFileProcessorManager (PID=1957) exited with exit code 1 - re-launching
+2021-04-05 05:10:26,580 INFO - Launched DagFileProcessorManager with pid: 2315
+2021-04-05 05:10:26,626 INFO - Configured default timezone Timezone('UTC')
+2021-04-05 05:10:27,054 INFO - Filling up the DagBag from /home/airflow/airflow/dags/parallel_dag.py
+2021-04-05 05:10:27,074 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:27,085 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:27,093 INFO - Filling up the DagBag from /home/airflow/airflow/dags/parallel_dag.py
+2021-04-05 05:10:27,100 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:27,668 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 05:00:00+00:00: scheduled__2021-04-05T05:00:00+00:00, externally triggered: False> failed
+2021-04-05 05:10:28,284 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 05:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:30,859 INFO - 6 tasks up for execution:
+	<TaskInstance: xcom_dag.task_4 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.processing_tasks.bash3 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.processing_tasks.bash2 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_c 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_b 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_a 2021-04-04 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:30,881 INFO - Figuring out tasks to run in Pool(name=default_pool) with 110 open slots and 6 task instances ready to be queued
+2021-04-05 05:10:30,881 INFO - DAG xcom_dag has 0/16 running and queued tasks
+2021-04-05 05:10:30,881 INFO - DAG xcom_dag has 1/16 running and queued tasks
+2021-04-05 05:10:30,881 INFO - DAG xcom_dag has 2/16 running and queued tasks
+2021-04-05 05:10:30,881 INFO - DAG xcom_dag has 3/16 running and queued tasks
+2021-04-05 05:10:30,881 INFO - DAG parallel_dag has 2/16 running and queued tasks
+2021-04-05 05:10:30,881 INFO - DAG parallel_dag has 3/16 running and queued tasks
+2021-04-05 05:10:30,882 INFO - Setting the following tasks to queued state:
+	<TaskInstance: xcom_dag.processing_tasks.training_model_c 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_b 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.processing_tasks.training_model_a 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: xcom_dag.task_4 2021-04-02 00:00:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.processing_tasks.bash3 2021-04-04 00:00:00+00:00 [scheduled]>
+	<TaskInstance: parallel_dag.processing_tasks.bash2 2021-04-04 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:30,900 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='processing_tasks.training_model_c', execution_date=datetime.datetime(2021, 4, 4, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 5 and queue default
+2021-04-05 05:10:30,900 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_c', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:30,900 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='processing_tasks.training_model_b', execution_date=datetime.datetime(2021, 4, 4, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 5 and queue default
+2021-04-05 05:10:30,900 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_b', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:30,900 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='processing_tasks.training_model_a', execution_date=datetime.datetime(2021, 4, 4, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 5 and queue default
+2021-04-05 05:10:30,900 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_a', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:30,900 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='task_4', execution_date=datetime.datetime(2021, 4, 2, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 4 and queue default
+2021-04-05 05:10:30,901 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'task_4', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:30,901 INFO - Sending TaskInstanceKey(dag_id='parallel_dag', task_id='processing_tasks.bash3', execution_date=datetime.datetime(2021, 4, 4, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 2 and queue default
+2021-04-05 05:10:30,901 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'parallel_dag', 'processing_tasks.bash3', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:30,901 INFO - Sending TaskInstanceKey(dag_id='parallel_dag', task_id='processing_tasks.bash2', execution_date=datetime.datetime(2021, 4, 4, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 2 and queue default
+2021-04-05 05:10:30,901 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'parallel_dag', 'processing_tasks.bash2', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:30,912 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_c', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:30,915 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_b', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:30,917 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'processing_tasks.training_model_a', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:30,919 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'task_4', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:30,920 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'parallel_dag', 'processing_tasks.bash3', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:30,922 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'parallel_dag', 'processing_tasks.bash2', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:30,961 INFO - Executor reports execution of parallel_dag.bash4 execution_date=2021-04-04 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:30,961 INFO - Executor reports execution of xcom_dag.downloading_data execution_date=2021-04-04 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:30,961 INFO - Executor reports execution of xcom_dag.processing_tasks.training_model_c execution_date=2021-04-02 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:30,961 INFO - Executor reports execution of xcom_dag.processing_tasks.training_model_a execution_date=2021-04-02 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:30,962 INFO - Executor reports execution of xcom_dag.processing_tasks.training_model_b execution_date=2021-04-02 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:31,726 INFO - Filling up the DagBag from /home/airflow/airflow/dags/parallel_dag.py
+2021-04-05 05:10:31,737 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:31,751 INFO - Filling up the DagBag from /home/airflow/airflow/dags/parallel_dag.py
+2021-04-05 05:10:31,764 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:31,770 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:31,797 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:37,188 INFO - 1 tasks up for execution:
+	<TaskInstance: xcom_dag.task_4 2021-04-04 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:37,255 INFO - Figuring out tasks to run in Pool(name=default_pool) with 109 open slots and 1 task instances ready to be queued
+2021-04-05 05:10:37,255 INFO - DAG xcom_dag has 0/16 running and queued tasks
+2021-04-05 05:10:37,255 INFO - Setting the following tasks to queued state:
+	<TaskInstance: xcom_dag.task_4 2021-04-04 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:37,287 INFO - Sending TaskInstanceKey(dag_id='xcom_dag', task_id='task_4', execution_date=datetime.datetime(2021, 4, 4, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 4 and queue default
+2021-04-05 05:10:37,288 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'xcom_dag', 'task_4', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:37,291 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'xcom_dag', 'task_4', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/xcom_dag.py']
+2021-04-05 05:10:37,293 INFO - Executor reports execution of parallel_dag.processing_tasks.bash3 execution_date=2021-04-02 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:38,021 INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag.py
+2021-04-05 05:10:38,841 INFO - Executor reports execution of xcom_dag.processing_tasks.training_model_a execution_date=2021-04-04 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:38,841 INFO - Executor reports execution of xcom_dag.task_4 execution_date=2021-04-02 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:38,842 INFO - Executor reports execution of xcom_dag.processing_tasks.training_model_b execution_date=2021-04-04 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:38,842 INFO - Executor reports execution of xcom_dag.processing_tasks.training_model_c execution_date=2021-04-04 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:40,973 INFO - Marking run <DagRun xcom_dag @ 2021-04-02 00:00:00+00:00: scheduled__2021-04-02T00:00:00+00:00, externally triggered: False> successful
+2021-04-05 05:10:41,228 INFO - Executor reports execution of parallel_dag.processing_tasks.bash3 execution_date=2021-04-04 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:43,206 INFO - Executor reports execution of xcom_dag.task_4 execution_date=2021-04-04 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:44,862 INFO - Marking run <DagRun xcom_dag @ 2021-04-04 00:00:00+00:00: scheduled__2021-04-04T00:00:00+00:00, externally triggered: False> successful
+2021-04-05 05:10:49,467 INFO - 1 tasks up for execution:
+	<TaskInstance: parallel_dag.bash1 2021-04-02 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:49,479 INFO - Figuring out tasks to run in Pool(name=default_pool) with 111 open slots and 1 task instances ready to be queued
+2021-04-05 05:10:49,479 INFO - DAG parallel_dag has 1/16 running and queued tasks
+2021-04-05 05:10:49,479 INFO - Setting the following tasks to queued state:
+	<TaskInstance: parallel_dag.bash1 2021-04-02 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:49,495 INFO - Sending TaskInstanceKey(dag_id='parallel_dag', task_id='bash1', execution_date=datetime.datetime(2021, 4, 2, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:49,495 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'parallel_dag', 'bash1', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:49,510 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'parallel_dag', 'bash1', '2021-04-02T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:49,793 INFO - Filling up the DagBag from /home/airflow/airflow/dags/parallel_dag.py
+2021-04-05 05:10:50,085 INFO - Executor reports execution of parallel_dag.processing_tasks.bash2 execution_date=2021-04-02 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:54,022 INFO - 1 tasks up for execution:
+	<TaskInstance: parallel_dag.bash1 2021-04-04 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:54,050 INFO - Figuring out tasks to run in Pool(name=default_pool) with 111 open slots and 1 task instances ready to be queued
+2021-04-05 05:10:54,050 INFO - DAG parallel_dag has 1/16 running and queued tasks
+2021-04-05 05:10:54,050 INFO - Setting the following tasks to queued state:
+	<TaskInstance: parallel_dag.bash1 2021-04-04 00:00:00+00:00 [scheduled]>
+2021-04-05 05:10:54,058 INFO - Sending TaskInstanceKey(dag_id='parallel_dag', task_id='bash1', execution_date=datetime.datetime(2021, 4, 4, 0, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:10:54,058 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'parallel_dag', 'bash1', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:54,061 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'parallel_dag', 'bash1', '2021-04-04T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/parallel_dag.py']
+2021-04-05 05:10:54,067 INFO - Executor reports execution of parallel_dag.processing_tasks.bash2 execution_date=2021-04-04 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:10:54,907 INFO - Filling up the DagBag from /home/airflow/airflow/dags/parallel_dag.py
+2021-04-05 05:10:55,016 INFO - Marking run <DagRun parallel_dag @ 2021-04-02 00:00:00+00:00: scheduled__2021-04-02T00:00:00+00:00, externally triggered: False> successful
+2021-04-05 05:10:56,208 INFO - Executor reports execution of parallel_dag.bash1 execution_date=2021-04-02 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:11:00,300 INFO - Marking run <DagRun parallel_dag @ 2021-04-04 00:00:00+00:00: scheduled__2021-04-04T00:00:00+00:00, externally triggered: False> successful
+2021-04-05 05:11:00,412 INFO - Executor reports execution of parallel_dag.bash1 execution_date=2021-04-04 00:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:13:47,175 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:13:47,179 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:13:47,179 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:13:47,180 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:13:47,188 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:13:47,189 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:13:47,190 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:13:47,440 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:13:51,494 INFO - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:00:00+00:00: scheduled__2021-04-05T05:00:00+00:00, externally triggered: False> successful
+2021-04-05 05:13:51,765 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:00:00+00:00 exited with status success for try_number 1
+2021-04-05 05:14:36,871 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:14:36,886 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:14:36,887 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:14:36,887 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:14:36,907 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 0, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 05:14:36,907 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:14:36,913 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:14:37,488 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:14:40,457 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:00:00+00:00 exited with status success for try_number 2
+2021-04-05 05:15:14,154 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 05:16:48,124 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:16:48,138 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:16:48,138 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:16:48,139 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:16:48,140 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 0, tzinfo=Timezone('UTC')), try_number=3) to executor with priority 1 and queue default
+2021-04-05 05:16:48,141 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:16:48,143 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:16:48,451 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:16:59,436 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:00:00+00:00 exited with status success for try_number 3
+2021-04-05 05:18:42,699 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:18:42,714 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:18:42,714 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:18:42,714 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:18:42,735 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 0, tzinfo=Timezone('UTC')), try_number=4) to executor with priority 1 and queue default
+2021-04-05 05:18:42,736 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:18:42,738 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:18:43,366 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:18:54,503 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:00:00+00:00: scheduled__2021-04-05T05:00:00+00:00, externally triggered: False> failed
+2021-04-05 05:18:54,799 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:00:00+00:00 exited with status success for try_number 4
+2021-04-05 05:19:57,465 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:19:57,472 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:19:57,472 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:19:57,472 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:19:57,478 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 0, tzinfo=Timezone('UTC')), try_number=5) to executor with priority 1 and queue default
+2021-04-05 05:19:57,478 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:19:57,481 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:19:57,733 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:20:01,206 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+2021-04-05 05:20:01,211 INFO - Figuring out tasks to run in Pool(name=default_pool) with 111 open slots and 2 task instances ready to be queued
+2021-04-05 05:20:01,211 INFO - DAG baxa_lead_importer has 1/16 running and queued tasks
+2021-04-05 05:20:01,211 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:20:01,211 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+2021-04-05 05:20:01,216 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 10, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:20:01,217 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:20:01,217 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 10, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:20:01,217 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:20:01,223 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:20:01,226 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:20:01,603 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:20:01,610 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:20:04,392 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 05:10:00+00:00: scheduled__2021-04-05T05:10:00+00:00, externally triggered: False> failed
+2021-04-05 05:20:04,926 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 05:10:00+00:00 exited with status success for try_number 1
+2021-04-05 05:20:08,882 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:00:00+00:00 exited with status success for try_number 5
+2021-04-05 05:20:13,214 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:10:00+00:00 exited with status success for try_number 1
+2021-04-05 05:20:14,371 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 05:22:52,074 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:22:52,116 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 05:22:52,117 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:22:52,117 INFO - DAG baxa_lead_importer has 1/16 running and queued tasks
+2021-04-05 05:22:52,117 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+2021-04-05 05:22:52,143 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 0, tzinfo=Timezone('UTC')), try_number=6) to executor with priority 1 and queue default
+2021-04-05 05:22:52,144 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:22:52,144 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 10, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 05:22:52,144 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:22:52,148 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:22:52,159 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:22:52,854 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:22:52,856 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:23:04,294 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:10:00+00:00 exited with status success for try_number 2
+2021-04-05 05:23:04,295 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:00:00+00:00 exited with status success for try_number 6
+2021-04-05 05:23:05,387 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:10:00+00:00: scheduled__2021-04-05T05:10:00+00:00, externally triggered: False> failed
+2021-04-05 05:23:05,411 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:00:00+00:00: scheduled__2021-04-05T05:00:00+00:00, externally triggered: False> failed
+2021-04-05 05:23:16,327 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:23:16,347 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:23:16,347 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:23:16,347 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:00:00+00:00 [scheduled]>
+2021-04-05 05:23:16,350 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 0, tzinfo=Timezone('UTC')), try_number=7) to executor with priority 1 and queue default
+2021-04-05 05:23:16,350 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:23:16,353 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:23:16,723 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:23:25,327 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+2021-04-05 05:23:25,336 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:23:25,336 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:23:25,337 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+2021-04-05 05:23:25,348 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 10, tzinfo=Timezone('UTC')), try_number=3) to executor with priority 1 and queue default
+2021-04-05 05:23:25,348 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:23:25,353 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:23:25,660 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:23:28,977 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:00:00+00:00: scheduled__2021-04-05T05:00:00+00:00, externally triggered: False> failed
+2021-04-05 05:23:29,324 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:00:00+00:00 exited with status success for try_number 7
+2021-04-05 05:23:37,241 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:10:00+00:00 exited with status success for try_number 3
+2021-04-05 05:23:42,836 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+2021-04-05 05:23:42,840 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:23:42,840 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:23:42,841 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:10:00+00:00 [scheduled]>
+2021-04-05 05:23:42,855 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 10, tzinfo=Timezone('UTC')), try_number=4) to executor with priority 1 and queue default
+2021-04-05 05:23:42,855 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:23:42,857 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:23:43,159 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:23:54,332 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:10:00+00:00: scheduled__2021-04-05T05:10:00+00:00, externally triggered: False> failed
+2021-04-05 05:23:54,547 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:10:00+00:00 exited with status success for try_number 4
+2021-04-05 05:25:14,721 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 05:30:01,272 INFO - 2 tasks up for execution:
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:20:00+00:00 [scheduled]>
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:20:00+00:00 [scheduled]>
+2021-04-05 05:30:01,277 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 05:30:01,278 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:30:01,278 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:30:01,278 INFO - Setting the following tasks to queued state:
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:20:00+00:00 [scheduled]>
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:20:00+00:00 [scheduled]>
+2021-04-05 05:30:01,281 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 20, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:30:01,281 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:30:01,281 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 20, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:30:01,281 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:30:01,283 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:30:01,288 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:30:01,581 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:30:01,594 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:30:02,909 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 05:20:00+00:00: scheduled__2021-04-05T05:20:00+00:00, externally triggered: False> failed
+2021-04-05 05:30:03,173 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 05:20:00+00:00 exited with status success for try_number 1
+2021-04-05 05:30:03,749 WARNING - DagFileProcessorManager (PID=2315) exited with exit code 1 - re-launching
+2021-04-05 05:30:03,754 INFO - Launched DagFileProcessorManager with pid: 53811
+2021-04-05 05:30:03,781 INFO - Configured default timezone Timezone('UTC')
+2021-04-05 05:30:12,892 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:20:00+00:00 exited with status success for try_number 1
+2021-04-05 05:30:15,304 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 05:30:18,039 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:20:00+00:00 [scheduled]>
+2021-04-05 05:30:18,048 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:30:18,049 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:30:18,049 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:20:00+00:00 [scheduled]>
+2021-04-05 05:30:18,051 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 20, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 05:30:18,051 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:30:18,053 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:30:18,343 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:30:29,595 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:20:00+00:00 exited with status success for try_number 2
+2021-04-05 05:30:30,383 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:20:00+00:00: scheduled__2021-04-05T05:20:00+00:00, externally triggered: False> failed
+2021-04-05 05:35:15,456 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 05:40:00,924 INFO - 2 tasks up for execution:
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:30:00+00:00 [scheduled]>
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:30:00+00:00 [scheduled]>
+2021-04-05 05:40:00,935 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 05:40:00,936 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:40:00,936 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:40:00,936 INFO - Setting the following tasks to queued state:
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:30:00+00:00 [scheduled]>
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:30:00+00:00 [scheduled]>
+2021-04-05 05:40:00,939 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 30, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:40:00,939 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:40:00,939 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 30, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:40:00,939 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:40:00,949 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:40:00,951 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:40:01,307 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:40:01,318 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:40:03,092 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 05:30:00+00:00 exited with status success for try_number 1
+2021-04-05 05:40:04,204 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 05:30:00+00:00: scheduled__2021-04-05T05:30:00+00:00, externally triggered: False> failed
+2021-04-05 05:40:13,095 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:30:00+00:00 exited with status success for try_number 1
+2021-04-05 05:40:15,767 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 05:40:18,313 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:30:00+00:00 [scheduled]>
+2021-04-05 05:40:18,324 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:40:18,324 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:40:18,324 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:30:00+00:00 [scheduled]>
+2021-04-05 05:40:18,329 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 30, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 05:40:18,330 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:40:18,331 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:40:18,569 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:40:29,751 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:30:00+00:00 exited with status success for try_number 2
+2021-04-05 05:40:29,931 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:30:00+00:00: scheduled__2021-04-05T05:30:00+00:00, externally triggered: False> failed
+2021-04-05 05:45:15,952 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 05:50:00,862 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:40:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:40:00+00:00 [scheduled]>
+2021-04-05 05:50:00,863 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 05:50:00,863 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:50:00,863 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:50:00,863 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:40:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:40:00+00:00 [scheduled]>
+2021-04-05 05:50:00,870 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 40, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:50:00,870 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:50:00,870 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 40, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 05:50:00,870 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:50:00,872 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:50:00,874 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 05:50:01,122 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:50:01,132 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 05:50:03,827 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 05:40:00+00:00: scheduled__2021-04-05T05:40:00+00:00, externally triggered: False> failed
+2021-04-05 05:50:04,089 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 05:40:00+00:00 exited with status success for try_number 1
+2021-04-05 05:50:05,179 WARNING - DagFileProcessorManager (PID=53811) exited with exit code 1 - re-launching
+2021-04-05 05:50:05,182 INFO - Launched DagFileProcessorManager with pid: 109772
+2021-04-05 05:50:05,191 INFO - Configured default timezone Timezone('UTC')
+2021-04-05 05:50:13,971 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:40:00+00:00 exited with status success for try_number 1
+2021-04-05 05:50:16,360 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 05:50:17,909 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:40:00+00:00 [scheduled]>
+2021-04-05 05:50:17,919 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 05:50:17,920 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 05:50:17,921 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:40:00+00:00 [scheduled]>
+2021-04-05 05:50:17,935 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 40, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 05:50:17,935 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:50:17,940 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 05:50:18,292 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 05:50:30,065 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:40:00+00:00: scheduled__2021-04-05T05:40:00+00:00, externally triggered: False> failed
+2021-04-05 05:50:30,316 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:40:00+00:00 exited with status success for try_number 2
+2021-04-05 05:55:16,687 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:00:00,595 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:50:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:50:00+00:00 [scheduled]>
+2021-04-05 06:00:00,603 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 06:00:00,603 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:00:00,603 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:00:00,604 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:50:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 05:50:00+00:00 [scheduled]>
+2021-04-05 06:00:00,614 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 50, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:00:00,614 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:00:00,617 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 50, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:00:00,617 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:00:00,620 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:00:00,622 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T05:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:00:00,964 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 06:00:00,968 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:00:14,732 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 05:50:00+00:00 exited with status success for try_number 1
+2021-04-05 06:00:15,867 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 05:50:00+00:00: scheduled__2021-04-05T05:50:00+00:00, externally triggered: False> failed
+2021-04-05 06:00:17,034 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:00:25,729 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:50:00+00:00 exited with status success for try_number 1
+2021-04-05 06:00:30,809 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:50:00+00:00 [scheduled]>
+2021-04-05 06:00:30,812 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 06:00:30,812 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:00:30,812 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 05:50:00+00:00 [scheduled]>
+2021-04-05 06:00:30,818 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 5, 50, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 06:00:30,818 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:00:30,820 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T05:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:00:31,101 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:00:42,303 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 05:50:00+00:00: scheduled__2021-04-05T05:50:00+00:00, externally triggered: False> failed
+2021-04-05 06:00:42,543 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 05:50:00+00:00 exited with status success for try_number 2
+2021-04-05 06:05:17,088 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:10:01,660 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:00:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:00:00+00:00 [scheduled]>
+2021-04-05 06:10:01,669 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 06:10:01,669 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:10:01,669 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:10:01,669 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:00:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:00:00+00:00 [scheduled]>
+2021-04-05 06:10:01,673 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:10:01,673 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:10:01,673 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:10:01,673 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:10:01,676 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:10:01,681 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:10:01,980 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 06:10:01,991 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:10:04,436 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 06:00:00+00:00: scheduled__2021-04-05T06:00:00+00:00, externally triggered: False> failed
+2021-04-05 06:10:04,690 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 06:00:00+00:00 exited with status success for try_number 1
+2021-04-05 06:10:13,213 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:00:00+00:00 exited with status success for try_number 1
+2021-04-05 06:10:17,198 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:10:19,163 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:00:00+00:00 [scheduled]>
+2021-04-05 06:10:19,168 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 06:10:19,169 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:10:19,169 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:00:00+00:00 [scheduled]>
+2021-04-05 06:10:19,181 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 0, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 06:10:19,182 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:10:19,189 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:10:19,618 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:10:30,700 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:00:00+00:00 exited with status success for try_number 2
+2021-04-05 06:10:31,792 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 06:00:00+00:00: scheduled__2021-04-05T06:00:00+00:00, externally triggered: False> failed
+2021-04-05 06:15:17,549 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:20:00,942 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:10:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:10:00+00:00 [scheduled]>
+2021-04-05 06:20:00,946 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 06:20:00,946 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:20:00,950 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:20:00,950 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:10:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:10:00+00:00 [scheduled]>
+2021-04-05 06:20:00,957 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 10, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:20:00,958 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:20:00,958 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 10, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:20:00,958 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:20:00,962 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:20:00,965 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:20:01,328 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:20:01,346 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 06:20:03,306 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 06:10:00+00:00 exited with status success for try_number 1
+2021-04-05 06:20:04,394 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 06:10:00+00:00: scheduled__2021-04-05T06:10:00+00:00, externally triggered: False> failed
+2021-04-05 06:20:12,624 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:10:00+00:00 exited with status success for try_number 1
+2021-04-05 06:20:17,868 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:10:00+00:00 [scheduled]>
+2021-04-05 06:20:17,877 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 06:20:17,878 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:20:17,878 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:10:00+00:00 [scheduled]>
+2021-04-05 06:20:17,883 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 10, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 06:20:17,883 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:20:17,886 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:20:17,916 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:20:18,145 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:20:29,768 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 06:10:00+00:00: scheduled__2021-04-05T06:10:00+00:00, externally triggered: False> failed
+2021-04-05 06:20:30,075 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:10:00+00:00 exited with status success for try_number 2
+2021-04-05 06:25:18,078 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:30:00,910 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:20:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:20:00+00:00 [scheduled]>
+2021-04-05 06:30:00,917 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 06:30:00,917 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:30:00,917 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:30:00,917 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:20:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:20:00+00:00 [scheduled]>
+2021-04-05 06:30:00,919 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 20, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:30:00,919 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:30:00,919 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 20, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:30:00,919 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:30:00,921 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:30:00,927 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:30:01,234 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 06:30:01,239 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:30:04,162 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 06:20:00+00:00: scheduled__2021-04-05T06:20:00+00:00, externally triggered: False> failed
+2021-04-05 06:30:04,641 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 06:20:00+00:00 exited with status success for try_number 1
+2021-04-05 06:30:05,840 WARNING - DagFileProcessorManager (PID=109772) exited with exit code 1 - re-launching
+2021-04-05 06:30:05,843 INFO - Launched DagFileProcessorManager with pid: 219544
+2021-04-05 06:30:05,864 INFO - Configured default timezone Timezone('UTC')
+2021-04-05 06:30:13,930 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:20:00+00:00 exited with status success for try_number 1
+2021-04-05 06:30:18,363 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:20:00+00:00 [scheduled]>
+2021-04-05 06:30:18,366 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 06:30:18,366 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:30:18,370 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:20:00+00:00 [scheduled]>
+2021-04-05 06:30:18,375 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 20, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 06:30:18,375 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:30:18,381 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:30:18,396 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:30:18,682 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:30:30,183 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 06:20:00+00:00: scheduled__2021-04-05T06:20:00+00:00, externally triggered: False> failed
+2021-04-05 06:30:30,439 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:20:00+00:00 exited with status success for try_number 2
+2021-04-05 06:35:18,792 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:40:01,463 INFO - 2 tasks up for execution:
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:30:00+00:00 [scheduled]>
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:30:00+00:00 [scheduled]>
+2021-04-05 06:40:01,472 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 06:40:01,472 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:40:01,472 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:40:01,472 INFO - Setting the following tasks to queued state:
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:30:00+00:00 [scheduled]>
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:30:00+00:00 [scheduled]>
+2021-04-05 06:40:01,476 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 30, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:40:01,478 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:40:01,478 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 30, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:40:01,478 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:40:01,479 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:40:01,482 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:40:01,856 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:40:01,874 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 06:40:04,339 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 06:30:00+00:00: scheduled__2021-04-05T06:30:00+00:00, externally triggered: False> failed
+2021-04-05 06:40:04,546 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 06:30:00+00:00 exited with status success for try_number 1
+2021-04-05 06:40:13,767 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:30:00+00:00 exited with status success for try_number 1
+2021-04-05 06:40:19,127 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:30:00+00:00 [scheduled]>
+2021-04-05 06:40:19,131 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 06:40:19,132 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:40:19,132 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:30:00+00:00 [scheduled]>
+2021-04-05 06:40:19,144 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 30, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 06:40:19,144 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:40:19,146 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:30:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:40:19,198 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:40:19,496 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:40:31,009 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 06:30:00+00:00: scheduled__2021-04-05T06:30:00+00:00, externally triggered: False> failed
+2021-04-05 06:40:31,297 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:30:00+00:00 exited with status success for try_number 2
+2021-04-05 06:45:19,469 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:50:00,559 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:40:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:40:00+00:00 [scheduled]>
+2021-04-05 06:50:00,563 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 06:50:00,563 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:50:00,563 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:50:00,563 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:40:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:40:00+00:00 [scheduled]>
+2021-04-05 06:50:00,571 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 40, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:50:00,571 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:50:00,571 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 40, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 06:50:00,571 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:50:00,579 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:50:00,581 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 06:50:00,940 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 06:50:00,950 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:50:02,910 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 06:40:00+00:00 exited with status success for try_number 1
+2021-04-05 06:50:04,233 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 06:40:00+00:00: scheduled__2021-04-05T06:40:00+00:00, externally triggered: False> failed
+2021-04-05 06:50:13,415 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:40:00+00:00 exited with status success for try_number 1
+2021-04-05 06:50:17,384 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:40:00+00:00 [scheduled]>
+2021-04-05 06:50:17,396 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 06:50:17,397 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 06:50:17,397 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:40:00+00:00 [scheduled]>
+2021-04-05 06:50:17,398 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 40, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 06:50:17,399 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:50:17,400 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:40:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 06:50:17,657 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 06:50:19,786 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 06:50:28,577 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:40:00+00:00 exited with status success for try_number 2
+2021-04-05 06:50:29,148 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 06:40:00+00:00: scheduled__2021-04-05T06:40:00+00:00, externally triggered: False> failed
+2021-04-05 06:55:19,966 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 07:00:01,182 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:50:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:50:00+00:00 [scheduled]>
+2021-04-05 07:00:01,191 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 07:00:01,191 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:00:01,191 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:00:01,191 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:50:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 06:50:00+00:00 [scheduled]>
+2021-04-05 07:00:01,200 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 50, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 07:00:01,201 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:00:01,201 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 50, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 07:00:01,201 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 07:00:01,203 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:00:01,206 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T06:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 07:00:01,553 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 07:00:01,572 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 07:00:02,965 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 06:50:00+00:00: scheduled__2021-04-05T06:50:00+00:00, externally triggered: False> failed
+2021-04-05 07:00:03,231 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 06:50:00+00:00 exited with status success for try_number 1
+2021-04-05 07:00:13,088 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:50:00+00:00 exited with status success for try_number 1
+2021-04-05 07:00:18,571 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:50:00+00:00 [scheduled]>
+2021-04-05 07:00:18,583 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 07:00:18,583 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:00:18,583 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 06:50:00+00:00 [scheduled]>
+2021-04-05 07:00:18,588 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 6, 50, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 07:00:18,588 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:00:18,591 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T06:50:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:00:18,927 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 07:00:20,380 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 07:00:30,412 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 06:50:00+00:00: scheduled__2021-04-05T06:50:00+00:00, externally triggered: False> failed
+2021-04-05 07:00:30,875 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 06:50:00+00:00 exited with status success for try_number 2
+2021-04-05 07:05:20,834 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 07:10:00,772 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:00:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 07:00:00+00:00 [scheduled]>
+2021-04-05 07:10:00,776 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 07:10:00,776 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:10:00,776 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:10:00,776 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:00:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 07:00:00+00:00 [scheduled]>
+2021-04-05 07:10:00,792 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 7, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 07:10:00,792 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:10:00,792 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 7, 0, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 07:10:00,792 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T07:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 07:10:00,795 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:10:00,797 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T07:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 07:10:01,177 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 07:10:01,164 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 07:10:04,101 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 07:00:00+00:00: scheduled__2021-04-05T07:00:00+00:00, externally triggered: False> failed
+2021-04-05 07:10:04,539 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 07:00:00+00:00 exited with status success for try_number 1
+2021-04-05 07:10:12,825 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 07:00:00+00:00 exited with status success for try_number 1
+2021-04-05 07:10:17,818 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:00:00+00:00 [scheduled]>
+2021-04-05 07:10:17,824 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 07:10:17,825 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:10:17,825 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:00:00+00:00 [scheduled]>
+2021-04-05 07:10:17,831 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 7, 0, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 07:10:17,831 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:10:17,833 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:10:18,119 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 07:10:21,124 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 07:10:29,520 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 07:00:00+00:00: scheduled__2021-04-05T07:00:00+00:00, externally triggered: False> failed
+2021-04-05 07:10:29,804 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 07:00:00+00:00 exited with status success for try_number 2
+2021-04-05 07:15:21,411 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 07:20:01,293 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:10:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 07:10:00+00:00 [scheduled]>
+2021-04-05 07:20:01,301 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 07:20:01,301 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:20:01,301 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:20:01,301 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:10:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 07:10:00+00:00 [scheduled]>
+2021-04-05 07:20:01,307 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 7, 10, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 07:20:01,308 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:20:01,308 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 7, 10, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 07:20:01,308 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T07:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 07:20:01,311 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:20:01,313 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T07:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 07:20:01,649 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 07:20:01,666 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 07:20:03,499 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 07:10:00+00:00 exited with status success for try_number 1
+2021-04-05 07:20:04,452 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 07:10:00+00:00: scheduled__2021-04-05T07:10:00+00:00, externally triggered: False> failed
+2021-04-05 07:20:06,335 WARNING - DagFileProcessorManager (PID=219544) exited with exit code 1 - re-launching
+2021-04-05 07:20:06,338 INFO - Launched DagFileProcessorManager with pid: 353813
+2021-04-05 07:20:06,348 INFO - Configured default timezone Timezone('UTC')
+2021-04-05 07:20:14,812 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 07:10:00+00:00 exited with status success for try_number 1
+2021-04-05 07:20:18,605 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:10:00+00:00 [scheduled]>
+2021-04-05 07:20:18,607 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 07:20:18,607 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:20:18,607 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:10:00+00:00 [scheduled]>
+2021-04-05 07:20:18,615 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 7, 10, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 07:20:18,615 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:20:18,617 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:10:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:20:18,944 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 07:20:21,826 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 07:20:30,293 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 07:10:00+00:00: scheduled__2021-04-05T07:10:00+00:00, externally triggered: False> failed
+2021-04-05 07:20:30,539 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 07:10:00+00:00 exited with status success for try_number 2
+2021-04-05 07:25:22,179 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 07:30:01,299 INFO - 2 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:20:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 07:20:00+00:00 [scheduled]>
+2021-04-05 07:30:01,303 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 2 task instances ready to be queued
+2021-04-05 07:30:01,303 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:30:01,303 INFO - DAG fec_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:30:01,303 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:20:00+00:00 [scheduled]>
+	<TaskInstance: fec_lead_importer.main 2021-04-05 07:20:00+00:00 [scheduled]>
+2021-04-05 07:30:01,325 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 7, 20, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 07:30:01,325 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:30:01,326 INFO - Sending TaskInstanceKey(dag_id='fec_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 7, 20, tzinfo=Timezone('UTC')), try_number=1) to executor with priority 1 and queue default
+2021-04-05 07:30:01,326 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T07:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 07:30:01,331 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:30:01,333 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'fec_lead_importer', 'main', '2021-04-05T07:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/airflow_poc.py']
+2021-04-05 07:30:01,672 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 07:30:01,687 INFO - Filling up the DagBag from /home/airflow/airflow/dags/airflow_poc.py
+2021-04-05 07:30:03,635 INFO - Executor reports execution of fec_lead_importer.main execution_date=2021-04-05 07:20:00+00:00 exited with status success for try_number 1
+2021-04-05 07:30:04,760 ERROR - Marking run <DagRun fec_lead_importer @ 2021-04-05 07:20:00+00:00: scheduled__2021-04-05T07:20:00+00:00, externally triggered: False> failed
+2021-04-05 07:30:13,296 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 07:20:00+00:00 exited with status success for try_number 1
+2021-04-05 07:30:18,454 INFO - 1 tasks up for execution:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:20:00+00:00 [scheduled]>
+2021-04-05 07:30:18,455 INFO - Figuring out tasks to run in Pool(name=default_pool) with 112 open slots and 1 task instances ready to be queued
+2021-04-05 07:30:18,455 INFO - DAG baxa_lead_importer has 0/16 running and queued tasks
+2021-04-05 07:30:18,455 INFO - Setting the following tasks to queued state:
+	<TaskInstance: baxa_lead_importer.main 2021-04-05 07:20:00+00:00 [scheduled]>
+2021-04-05 07:30:18,457 INFO - Sending TaskInstanceKey(dag_id='baxa_lead_importer', task_id='main', execution_date=datetime.datetime(2021, 4, 5, 7, 20, tzinfo=Timezone('UTC')), try_number=2) to executor with priority 1 and queue default
+2021-04-05 07:30:18,457 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:30:18,459 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'baxa_lead_importer', 'main', '2021-04-05T07:20:00+00:00', '--local', '--pool', 'default_pool', '--subdir', '/home/airflow/airflow/dags/baxa_lead_importer.py']
+2021-04-05 07:30:18,688 INFO - Filling up the DagBag from /home/airflow/airflow/dags/baxa_lead_importer.py
+2021-04-05 07:30:22,760 INFO - Resetting orphaned tasks for active dag runs
+2021-04-05 07:30:29,914 INFO - Executor reports execution of baxa_lead_importer.main execution_date=2021-04-05 07:20:00+00:00 exited with status success for try_number 2
+2021-04-05 07:30:30,988 ERROR - Marking run <DagRun baxa_lead_importer @ 2021-04-05 07:20:00+00:00: scheduled__2021-04-05T07:20:00+00:00, externally triggered: False> failed
+2021-04-05 07:32:43,616 INFO - Exiting gracefully upon receiving signal 15
+2021-04-05 07:32:44,627 INFO - Sending Signals.SIGTERM to GPID 353813
+2021-04-05 07:32:44,833 INFO - Process psutil.Process(pid=387064, status='terminated', started='07:32:43') (387064) terminated with exit code None
+2021-04-05 07:32:44,835 INFO - Process psutil.Process(pid=353813, status='terminated', exitcode=0, started='07:20:05') (353813) terminated with exit code 0
+2021-04-05 07:32:44,836 INFO - Process psutil.Process(pid=387087, status='terminated', started='07:32:44') (387087) terminated with exit code None
+2021-04-05 07:32:44,842 INFO - Sending Signals.SIGTERM to GPID 353813
+2021-04-05 07:32:44,842 INFO - Exited execute loop

@@ -1,0 +1,26 @@
+[2021-03-29 17:29:47,916] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: xcom_dag.task_4 2021-03-28T00:00:00+00:00 [queued]>
+[2021-03-29 17:29:47,971] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: xcom_dag.task_4 2021-03-28T00:00:00+00:00 [queued]>
+[2021-03-29 17:29:47,971] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-29 17:29:47,971] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-29 17:29:47,971] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-29 17:29:48,009] {taskinstance.py:1038} INFO - Executing <Task(BranchPythonOperator): task_4> on 2021-03-28T00:00:00+00:00
+[2021-03-29 17:29:48,010] {standard_task_runner.py:51} INFO - Started process 3349 to run task
+[2021-03-29 17:29:48,015] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'xcom_dag', 'task_4', '2021-03-28T00:00:00+00:00', '--job-id', '186', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/xcom_dag.py', '--cfg-path', '/tmp/tmpfkh3u5um']
+[2021-03-29 17:29:48,016] {standard_task_runner.py:76} INFO - Job 186: Subtask task_4
+[2021-03-29 17:29:48,173] {logging_mixin.py:103} INFO - Running <TaskInstance: xcom_dag.task_4 2021-03-28T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-29 17:29:48,335] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=xcom_dag
+AIRFLOW_CTX_TASK_ID=task_4
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-28T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-03-28T00:00:00+00:00
+[2021-03-29 17:29:48,337] {logging_mixin.py:103} INFO - choose best model
+[2021-03-29 17:29:48,357] {logging_mixin.py:103} INFO - [2.1894226104429637, 6.055314101587816, 3.834863665881688]
+[2021-03-29 17:29:48,357] {python.py:118} INFO - Done. Returned value was: accurate
+[2021-03-29 17:29:48,357] {skipmixin.py:124} INFO - Following branch accurate
+[2021-03-29 17:29:48,387] {skipmixin.py:155} INFO - Skipping tasks ['inaccurate']
+[2021-03-29 17:29:48,556] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=xcom_dag, task_id=task_4, execution_date=20210328T000000, start_date=20210329T172947, end_date=20210329T172948
+[2021-03-29 17:29:48,844] {taskinstance.py:1195} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-03-29 17:29:48,860] {local_task_job.py:118} INFO - Task exited with return code 0

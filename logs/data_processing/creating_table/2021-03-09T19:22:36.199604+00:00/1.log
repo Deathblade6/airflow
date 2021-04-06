@@ -1,0 +1,37 @@
+[2021-03-09 19:22:38,088] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.creating_table 2021-03-09T19:22:36.199604+00:00 [queued]>
+[2021-03-09 19:22:38,092] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.creating_table 2021-03-09T19:22:36.199604+00:00 [queued]>
+[2021-03-09 19:22:38,092] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-09 19:22:38,092] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-09 19:22:38,092] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-09 19:22:38,100] {taskinstance.py:1038} INFO - Executing <Task(SqliteOperator): creating_table> on 2021-03-09T19:22:36.199604+00:00
+[2021-03-09 19:22:38,101] {standard_task_runner.py:51} INFO - Started process 2448 to run task
+[2021-03-09 19:22:38,105] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'creating_table', '2021-03-09T19:22:36.199604+00:00', '--job-id', '7', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmp8dmfij4n']
+[2021-03-09 19:22:38,105] {standard_task_runner.py:76} INFO - Job 7: Subtask creating_table
+[2021-03-09 19:22:38,128] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.creating_table 2021-03-09T19:22:36.199604+00:00 [running]> on host airflowvm
+[2021-03-09 19:22:38,147] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=creating_table
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-09T19:22:36.199604+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-09T19:22:36.199604+00:00
+[2021-03-09 19:22:38,148] {sqlite.py:63} INFO - Executing: 
+            Create table userstwos(
+                email text not null primary key,
+                password text not null,
+                fname text not null
+            );
+            
+[2021-03-09 19:22:38,150] {base.py:65} INFO - Using connection to: id: db_sqlite. Host: /home/airflow/airflow/airflow.db, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-09 19:22:38,150] {dbapi.py:180} INFO - Running statement: 
+            Create table userstwos(
+                email text not null primary key,
+                password text not null,
+                fname text not null
+            );
+            , parameters: []
+[2021-03-09 19:22:38,154] {dbapi.py:186} INFO - Rows affected: -1
+[2021-03-09 19:22:38,157] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=creating_table, execution_date=20210309T192236, start_date=20210309T192238, end_date=20210309T192238
+[2021-03-09 19:22:38,170] {taskinstance.py:1195} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-03-09 19:22:38,207] {local_task_job.py:118} INFO - Task exited with return code 0

@@ -1,0 +1,25 @@
+[2021-03-10 07:07:44,990] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-02-16T00:00:00+00:00 [queued]>
+[2021-03-10 07:07:44,996] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-02-16T00:00:00+00:00 [queued]>
+[2021-03-10 07:07:44,996] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:07:44,997] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 07:07:44,997] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:07:45,005] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-02-16T00:00:00+00:00
+[2021-03-10 07:07:45,007] {standard_task_runner.py:51} INFO - Started process 43512 to run task
+[2021-03-10 07:07:45,012] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-02-16T00:00:00+00:00', '--job-id', '247', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmpegnxnk77']
+[2021-03-10 07:07:45,012] {standard_task_runner.py:76} INFO - Job 247: Subtask extract_users
+[2021-03-10 07:07:45,148] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-02-16T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-10 07:07:45,286] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-02-16T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-02-16T00:00:00+00:00
+[2021-03-10 07:07:45,286] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 07:07:45,293] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 07:07:45,294] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 07:07:46,029] {http.py:110} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"آرش","last":"حیدری"},"location":{"street":{"number":5095,"name":"واعظی"},"city":"کاشان","state":"سیستان و بلوچستان","country":"Iran","postcode":43081,"coordinates":{"latitude":"35.2724","longitude":"-1.8433"},"timezone":{"offset":"-12:00","description":"Eniwetok, Kwajalein"}},"email":"arsh.hydry@example.com","login":{"uuid":"1208dd75-e3d4-4f18-8f31-d9111d15aa24","username":"brownbutterfly874","password":"verona","salt":"5oYs8fHp","md5":"8f88261518e139b63a04fed872b225f9","sha1":"c27f5f1cc6a4cbfb1df82dffb07b883f8207d9cd","sha256":"c37316bf13707a13f477c7b29d059e81254c1c7f5af0d144e61c5b723e158af9"},"dob":{"date":"1975-10-29T18:16:49.885Z","age":46},"registered":{"date":"2003-08-01T12:52:32.571Z","age":18},"phone":"008-03661222","cell":"0989-442-5488","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/men/7.jpg","medium":"https://randomuser.me/api/portraits/med/men/7.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/7.jpg"},"nat":"IR"}],"info":{"seed":"961a7b25590e7fee","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 07:07:46,048] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210216T000000, start_date=20210310T070744, end_date=20210310T070746
+[2021-03-10 07:07:46,074] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 07:07:46,087] {local_task_job.py:118} INFO - Task exited with return code 0

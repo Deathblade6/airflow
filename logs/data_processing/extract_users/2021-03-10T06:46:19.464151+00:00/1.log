@@ -1,0 +1,25 @@
+[2021-03-10 06:48:05,543] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-03-10T06:46:19.464151+00:00 [queued]>
+[2021-03-10 06:48:05,548] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-03-10T06:46:19.464151+00:00 [queued]>
+[2021-03-10 06:48:05,548] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 06:48:05,549] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 06:48:05,549] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 06:48:05,556] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-03-10T06:46:19.464151+00:00
+[2021-03-10 06:48:05,558] {standard_task_runner.py:51} INFO - Started process 40227 to run task
+[2021-03-10 06:48:05,563] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-03-10T06:46:19.464151+00:00', '--job-id', '12', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmptyntbc91']
+[2021-03-10 06:48:05,563] {standard_task_runner.py:76} INFO - Job 12: Subtask extract_users
+[2021-03-10 06:48:05,686] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-03-10T06:46:19.464151+00:00 [running]> on host airflowvm
+[2021-03-10 06:48:05,814] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-10T06:46:19.464151+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-10T06:46:19.464151+00:00
+[2021-03-10 06:48:05,814] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 06:48:05,817] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 06:48:05,818] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 06:48:06,308] {http.py:110} INFO - {"results":[{"gender":"female","name":{"title":"Miss","first":"Jacqueline","last":"Simmmons"},"location":{"street":{"number":1492,"name":"Harrison Ct"},"city":"Launceston","state":"Western Australia","country":"Australia","postcode":591,"coordinates":{"latitude":"-84.7651","longitude":"94.1503"},"timezone":{"offset":"-6:00","description":"Central Time (US & Canada), Mexico City"}},"email":"jacqueline.simmmons@example.com","login":{"uuid":"6d33258e-ffad-4574-960e-637bda227bf4","username":"tinygorilla276","password":"4ever","salt":"8Q1tEs3y","md5":"863263482f545b64acfb29fbc8040652","sha1":"27d4855089769e6ab6bfc32fff08158208bf057d","sha256":"afd388d17a92ecf9e3e9e91416b0455faf20ee38fc327353af53e35c10905469"},"dob":{"date":"1970-04-18T16:57:03.423Z","age":51},"registered":{"date":"2015-04-04T02:02:53.796Z","age":6},"phone":"06-1147-9343","cell":"0413-606-894","id":{"name":"TFN","value":"440937422"},"picture":{"large":"https://randomuser.me/api/portraits/women/83.jpg","medium":"https://randomuser.me/api/portraits/med/women/83.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/83.jpg"},"nat":"AU"}],"info":{"seed":"3ae4130efd553521","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 06:48:06,320] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210310T064619, start_date=20210310T064805, end_date=20210310T064806
+[2021-03-10 06:48:06,335] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 06:48:06,348] {local_task_job.py:118} INFO - Task exited with return code 0

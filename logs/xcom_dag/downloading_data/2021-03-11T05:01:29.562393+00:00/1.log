@@ -1,0 +1,26 @@
+[2021-03-11 05:01:30,565] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: xcom_dag.downloading_data 2021-03-11T05:01:29.562393+00:00 [queued]>
+[2021-03-11 05:01:30,622] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: xcom_dag.downloading_data 2021-03-11T05:01:29.562393+00:00 [queued]>
+[2021-03-11 05:01:30,622] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-11 05:01:30,622] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-11 05:01:30,622] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-11 05:01:30,670] {taskinstance.py:1038} INFO - Executing <Task(BashOperator): downloading_data> on 2021-03-11T05:01:29.562393+00:00
+[2021-03-11 05:01:30,679] {standard_task_runner.py:51} INFO - Started process 135876 to run task
+[2021-03-11 05:01:30,709] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'xcom_dag', 'downloading_data', '2021-03-11T05:01:29.562393+00:00', '--job-id', '109', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/xcom_dag.py', '--cfg-path', '/tmp/tmp8hjyuhws']
+[2021-03-11 05:01:30,710] {standard_task_runner.py:76} INFO - Job 109: Subtask downloading_data
+[2021-03-11 05:01:30,847] {logging_mixin.py:103} INFO - Running <TaskInstance: xcom_dag.downloading_data 2021-03-11T05:01:29.562393+00:00 [running]> on host airflowvm
+[2021-03-11 05:01:30,985] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=xcom_dag
+AIRFLOW_CTX_TASK_ID=downloading_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-11T05:01:29.562393+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-11T05:01:29.562393+00:00
+[2021-03-11 05:01:30,985] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2021-03-11 05:01:30,986] {bash.py:158} INFO - Running command: sleep 3
+[2021-03-11 05:01:31,000] {bash.py:169} INFO - Output:
+[2021-03-11 05:01:34,011] {bash.py:177} INFO - Command exited with return code 0
+[2021-03-11 05:01:34,061] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=xcom_dag, task_id=downloading_data, execution_date=20210311T050129, start_date=20210311T050130, end_date=20210311T050134
+[2021-03-11 05:01:34,125] {taskinstance.py:1195} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2021-03-11 05:01:34,164] {local_task_job.py:118} INFO - Task exited with return code 0

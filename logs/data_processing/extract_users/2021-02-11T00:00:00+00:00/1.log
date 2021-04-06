@@ -1,0 +1,25 @@
+[2021-03-10 07:06:25,762] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-02-11T00:00:00+00:00 [queued]>
+[2021-03-10 07:06:25,768] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-02-11T00:00:00+00:00 [queued]>
+[2021-03-10 07:06:25,768] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:06:25,768] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 07:06:25,768] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:06:25,775] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-02-11T00:00:00+00:00
+[2021-03-10 07:06:25,777] {standard_task_runner.py:51} INFO - Started process 43369 to run task
+[2021-03-10 07:06:25,782] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-02-11T00:00:00+00:00', '--job-id', '222', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmpuatx_cb2']
+[2021-03-10 07:06:25,782] {standard_task_runner.py:76} INFO - Job 222: Subtask extract_users
+[2021-03-10 07:06:25,906] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-02-11T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-10 07:06:26,035] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-02-11T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-02-11T00:00:00+00:00
+[2021-03-10 07:06:26,035] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 07:06:26,038] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 07:06:26,039] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 07:06:27,037] {http.py:110} INFO - {"results":[{"gender":"female","name":{"title":"Miss","first":"Rosa","last":"Schuhmacher"},"location":{"street":{"number":9706,"name":"Raiffeisenstraße"},"city":"Weener","state":"Bayern","country":"Germany","postcode":15890,"coordinates":{"latitude":"-43.1081","longitude":"146.3362"},"timezone":{"offset":"-11:00","description":"Midway Island, Samoa"}},"email":"rosa.schuhmacher@example.com","login":{"uuid":"dc00fce1-1c45-4266-8097-01d892f07d41","username":"heavybear199","password":"mobile","salt":"WrtiAxHd","md5":"7ed7d091f7dea16c6744b888fa865335","sha1":"ee85ccfff8c373f57d5bbc9b14e8e5809a6df7c0","sha256":"349d8e8bc232b0cadfd08647fea48afe1c8b727b0f624c2cc7ea0fe25f3bf3ac"},"dob":{"date":"1990-05-12T03:23:23.275Z","age":31},"registered":{"date":"2011-11-18T12:34:49.301Z","age":10},"phone":"0190-4820571","cell":"0177-0607561","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/women/59.jpg","medium":"https://randomuser.me/api/portraits/med/women/59.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/59.jpg"},"nat":"DE"}],"info":{"seed":"54c12171f932bff1","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 07:06:27,051] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210211T000000, start_date=20210310T070625, end_date=20210310T070627
+[2021-03-10 07:06:27,067] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 07:06:27,099] {local_task_job.py:118} INFO - Task exited with return code 0

@@ -1,0 +1,25 @@
+[2021-03-10 07:06:47,577] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-02-13T00:00:00+00:00 [queued]>
+[2021-03-10 07:06:47,583] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-02-13T00:00:00+00:00 [queued]>
+[2021-03-10 07:06:47,583] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:06:47,583] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 07:06:47,583] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:06:47,591] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-02-13T00:00:00+00:00
+[2021-03-10 07:06:47,593] {standard_task_runner.py:51} INFO - Started process 43439 to run task
+[2021-03-10 07:06:47,598] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-02-13T00:00:00+00:00', '--job-id', '232', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmpvulckf6o']
+[2021-03-10 07:06:47,598] {standard_task_runner.py:76} INFO - Job 232: Subtask extract_users
+[2021-03-10 07:06:47,719] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-02-13T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-10 07:06:47,855] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-02-13T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-02-13T00:00:00+00:00
+[2021-03-10 07:06:47,855] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 07:06:47,858] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 07:06:47,860] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 07:06:48,741] {http.py:110} INFO - {"results":[{"gender":"female","name":{"title":"Madame","first":"Silke","last":"Lemoine"},"location":{"street":{"number":9572,"name":"Rue de L'Église"},"city":"Pont-en-Ogoz","state":"Basel-Landschaft","country":"Switzerland","postcode":4339,"coordinates":{"latitude":"-51.9553","longitude":"57.3285"},"timezone":{"offset":"+1:00","description":"Brussels, Copenhagen, Madrid, Paris"}},"email":"silke.lemoine@example.com","login":{"uuid":"e827f9a2-5481-424f-af1b-3aafbd57f0ce","username":"sadelephant686","password":"antonia","salt":"qGekq947","md5":"d28314fa392de51eccdb6b049e471990","sha1":"8e0fc89ba4c5f93f06d6153d73c0d40f56595272","sha256":"fd57001fd8f5d876224e53f3ae3ad84aadc8bfc7efeaa1b8fa4d1a09f9d2b594"},"dob":{"date":"1980-08-31T06:09:21.752Z","age":41},"registered":{"date":"2019-09-12T23:46:57.070Z","age":2},"phone":"077 907 93 51","cell":"076 134 99 28","id":{"name":"AVS","value":"756.4663.7736.11"},"picture":{"large":"https://randomuser.me/api/portraits/women/71.jpg","medium":"https://randomuser.me/api/portraits/med/women/71.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/71.jpg"},"nat":"CH"}],"info":{"seed":"a81931b35b69d4e4","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 07:06:48,755] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210213T000000, start_date=20210310T070647, end_date=20210310T070648
+[2021-03-10 07:06:48,772] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 07:06:48,800] {local_task_job.py:118} INFO - Task exited with return code 0

@@ -1,0 +1,48 @@
+[2021-03-10 06:46:21,904] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.creating_table 2021-03-10T06:46:19.464151+00:00 [queued]>
+[2021-03-10 06:46:21,909] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.creating_table 2021-03-10T06:46:19.464151+00:00 [queued]>
+[2021-03-10 06:46:21,909] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 06:46:21,909] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 06:46:21,909] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 06:46:21,917] {taskinstance.py:1038} INFO - Executing <Task(SqliteOperator): creating_table> on 2021-03-10T06:46:19.464151+00:00
+[2021-03-10 06:46:21,919] {standard_task_runner.py:51} INFO - Started process 39955 to run task
+[2021-03-10 06:46:21,924] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'creating_table', '2021-03-10T06:46:19.464151+00:00', '--job-id', '9', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmpj8nnswtt']
+[2021-03-10 06:46:21,924] {standard_task_runner.py:76} INFO - Job 9: Subtask creating_table
+[2021-03-10 06:46:22,049] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.creating_table 2021-03-10T06:46:19.464151+00:00 [running]> on host airflowvm
+[2021-03-10 06:46:22,172] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=creating_table
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-10T06:46:19.464151+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-03-10T06:46:19.464151+00:00
+[2021-03-10 06:46:22,173] {sqlite.py:63} INFO - Executing: 
+            Create table userstwos(
+                email text not null primary key,
+                password text not null,
+                fname text not null
+            );
+            
+[2021-03-10 06:46:22,175] {base.py:65} INFO - Using connection to: id: db_sqlite. Host: /home/airflow/airflow/airflow.db, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 06:46:22,175] {dbapi.py:180} INFO - Running statement: 
+            Create table userstwos(
+                email text not null primary key,
+                password text not null,
+                fname text not null
+            );
+            , parameters: []
+[2021-03-10 06:46:22,176] {taskinstance.py:1396} ERROR - table userstwos already exists
+Traceback (most recent call last):
+  File "/home/airflow/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1086, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1260, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/venv/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1300, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/venv/lib/python3.8/site-packages/airflow/providers/sqlite/operators/sqlite.py", line 65, in execute
+    hook.run(self.sql, parameters=self.parameters)
+  File "/home/airflow/venv/lib/python3.8/site-packages/airflow/hooks/dbapi.py", line 184, in run
+    cur.execute(sql_statement)
+sqlite3.OperationalError: table userstwos already exists
+[2021-03-10 06:46:22,177] {taskinstance.py:1433} INFO - Marking task as FAILED. dag_id=data_processing, task_id=creating_table, execution_date=20210310T064619, start_date=20210310T064621, end_date=20210310T064622
+[2021-03-10 06:46:22,223] {local_task_job.py:118} INFO - Task exited with return code 1

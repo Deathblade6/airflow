@@ -1,0 +1,25 @@
+[2021-03-10 07:05:00,916] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-02-03T00:00:00+00:00 [queued]>
+[2021-03-10 07:05:00,921] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-02-03T00:00:00+00:00 [queued]>
+[2021-03-10 07:05:00,921] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:05:00,921] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 07:05:00,921] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:05:00,929] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-02-03T00:00:00+00:00
+[2021-03-10 07:05:00,931] {standard_task_runner.py:51} INFO - Started process 43080 to run task
+[2021-03-10 07:05:00,936] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-02-03T00:00:00+00:00', '--job-id', '182', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmp5gjelubc']
+[2021-03-10 07:05:00,936] {standard_task_runner.py:76} INFO - Job 182: Subtask extract_users
+[2021-03-10 07:05:01,062] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-02-03T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-10 07:05:01,190] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-02-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-02-03T00:00:00+00:00
+[2021-03-10 07:05:01,190] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 07:05:01,193] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 07:05:01,195] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 07:05:01,738] {http.py:110} INFO - {"results":[{"gender":"female","name":{"title":"Ms","first":"درسا","last":"کوتی"},"location":{"street":{"number":364,"name":"ستارخان"},"city":"همدان","state":"خراسان جنوبی","country":"Iran","postcode":36991,"coordinates":{"latitude":"30.3807","longitude":"36.0610"},"timezone":{"offset":"-10:00","description":"Hawaii"}},"email":"drs.khwty@example.com","login":{"uuid":"5eb105c4-4e99-4dee-baae-893a0ae4fc93","username":"whiteleopard655","password":"phantom1","salt":"4KM146nN","md5":"63982db6247099da62fbc12cca81b42c","sha1":"92afd3edcccb53203c6e21f3c0884794777a7dca","sha256":"ec439f12fc50a88a5cf135963a38b5a2f40aadf1ff83b67176285786f702f549"},"dob":{"date":"1956-06-21T09:23:47.704Z","age":65},"registered":{"date":"2013-11-14T00:39:14.613Z","age":8},"phone":"069-29751427","cell":"0964-316-6963","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/women/2.jpg","medium":"https://randomuser.me/api/portraits/med/women/2.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/2.jpg"},"nat":"IR"}],"info":{"seed":"5de6f791ac0bd10a","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 07:05:01,753] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210203T000000, start_date=20210310T070500, end_date=20210310T070501
+[2021-03-10 07:05:01,770] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 07:05:01,806] {local_task_job.py:118} INFO - Task exited with return code 0

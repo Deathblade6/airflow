@@ -1,0 +1,25 @@
+[2021-03-10 07:00:57,681] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-12T00:00:00+00:00 [queued]>
+[2021-03-10 07:00:57,686] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-12T00:00:00+00:00 [queued]>
+[2021-03-10 07:00:57,686] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:00:57,686] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 07:00:57,686] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:00:57,694] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-01-12T00:00:00+00:00
+[2021-03-10 07:00:57,695] {standard_task_runner.py:51} INFO - Started process 42275 to run task
+[2021-03-10 07:00:57,700] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-01-12T00:00:00+00:00', '--job-id', '72', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmpce3einl7']
+[2021-03-10 07:00:57,700] {standard_task_runner.py:76} INFO - Job 72: Subtask extract_users
+[2021-03-10 07:00:57,823] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-01-12T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-10 07:00:57,951] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-12T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-12T00:00:00+00:00
+[2021-03-10 07:00:57,952] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 07:00:57,955] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 07:00:57,956] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 07:00:58,524] {http.py:110} INFO - {"results":[{"gender":"female","name":{"title":"Miss","first":"Susan","last":"Prescott"},"location":{"street":{"number":3204,"name":"Paddock Way"},"city":"Stockton","state":"Idaho","country":"United States","postcode":99765,"coordinates":{"latitude":"89.3009","longitude":"88.8754"},"timezone":{"offset":"-7:00","description":"Mountain Time (US & Canada)"}},"email":"susan.prescott@example.com","login":{"uuid":"eb3259d3-fd6b-4c2f-a27d-c8f841e74eb6","username":"ticklishpeacock592","password":"jiao","salt":"YzRWk9li","md5":"56e2947b4b393f747474a251a006872b","sha1":"18337857d9869b2e6caf1ed03dcc632c2ada4add","sha256":"56353f3f6068529aa51443b852a6aa583d5b4f4e21027d56c7dc575a42449f11"},"dob":{"date":"1997-06-14T22:56:43.190Z","age":24},"registered":{"date":"2011-07-24T15:39:59.116Z","age":10},"phone":"(184)-387-4046","cell":"(866)-441-4111","id":{"name":"SSN","value":"389-96-7571"},"picture":{"large":"https://randomuser.me/api/portraits/women/26.jpg","medium":"https://randomuser.me/api/portraits/med/women/26.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/26.jpg"},"nat":"US"}],"info":{"seed":"0f53550539fe2095","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 07:00:58,541] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210112T000000, start_date=20210310T070057, end_date=20210310T070058
+[2021-03-10 07:00:58,557] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 07:00:58,572] {local_task_job.py:118} INFO - Task exited with return code 0

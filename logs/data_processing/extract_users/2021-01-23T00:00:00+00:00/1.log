@@ -1,0 +1,25 @@
+[2021-03-10 07:02:56,954] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-23T00:00:00+00:00 [queued]>
+[2021-03-10 07:02:56,959] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-23T00:00:00+00:00 [queued]>
+[2021-03-10 07:02:56,960] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:02:56,960] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 07:02:56,960] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:02:56,968] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-01-23T00:00:00+00:00
+[2021-03-10 07:02:56,969] {standard_task_runner.py:51} INFO - Started process 42674 to run task
+[2021-03-10 07:02:56,974] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-01-23T00:00:00+00:00', '--job-id', '127', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmpxfqxg1ic']
+[2021-03-10 07:02:56,974] {standard_task_runner.py:76} INFO - Job 127: Subtask extract_users
+[2021-03-10 07:02:57,107] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-01-23T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-10 07:02:57,236] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-23T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-23T00:00:00+00:00
+[2021-03-10 07:02:57,236] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 07:02:57,239] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 07:02:57,240] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 07:02:57,722] {http.py:110} INFO - {"results":[{"gender":"female","name":{"title":"Mrs","first":"Anne","last":"Fjørtoft"},"location":{"street":{"number":7521,"name":"Neuberggata"},"city":"Fitjar","state":"Hordaland","country":"Norway","postcode":"8762","coordinates":{"latitude":"53.9665","longitude":"165.6713"},"timezone":{"offset":"+10:00","description":"Eastern Australia, Guam, Vladivostok"}},"email":"anne.fjortoft@example.com","login":{"uuid":"139fc925-6297-4c19-94fb-3202f9892028","username":"sadduck254","password":"xanadu","salt":"kMBXeLLt","md5":"4e3bd5878229a7996b4081b202924cad","sha1":"1530c3ef3a57a86bb06952000c27af1a7a90f9e4","sha256":"e2721c9bef1d9f4811f8d9869bf67d08d9e81ad11f3997941ffdb14d07a37cb8"},"dob":{"date":"1944-11-26T08:22:14.789Z","age":77},"registered":{"date":"2004-10-02T23:26:17.396Z","age":17},"phone":"65510153","cell":"41478307","id":{"name":"FN","value":"26114417628"},"picture":{"large":"https://randomuser.me/api/portraits/women/94.jpg","medium":"https://randomuser.me/api/portraits/med/women/94.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/94.jpg"},"nat":"NO"}],"info":{"seed":"144f18208f4ca557","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 07:02:57,735] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210123T000000, start_date=20210310T070256, end_date=20210310T070257
+[2021-03-10 07:02:57,751] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 07:02:57,763] {local_task_job.py:118} INFO - Task exited with return code 0

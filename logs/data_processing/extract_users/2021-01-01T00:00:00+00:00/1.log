@@ -1,0 +1,25 @@
+[2021-03-10 06:58:35,233] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-01T00:00:00+00:00 [queued]>
+[2021-03-10 06:58:35,239] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-01T00:00:00+00:00 [queued]>
+[2021-03-10 06:58:35,239] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 06:58:35,239] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 06:58:35,239] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 06:58:35,249] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-01-01T00:00:00+00:00
+[2021-03-10 06:58:35,251] {standard_task_runner.py:51} INFO - Started process 41855 to run task
+[2021-03-10 06:58:35,257] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-01-01T00:00:00+00:00', '--job-id', '20', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmp6ietb9l0']
+[2021-03-10 06:58:35,258] {standard_task_runner.py:76} INFO - Job 20: Subtask extract_users
+[2021-03-10 06:58:35,386] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-01-01T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-10 06:58:35,515] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2021-03-10 06:58:35,515] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 06:58:35,518] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 06:58:35,519] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 06:58:36,186] {http.py:110} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Volkan","last":"Aykaç"},"location":{"street":{"number":822,"name":"Şehitler Cd"},"city":"Trabzon","state":"Uşak","country":"Turkey","postcode":29023,"coordinates":{"latitude":"69.1945","longitude":"-17.2266"},"timezone":{"offset":"-9:00","description":"Alaska"}},"email":"volkan.aykac@example.com","login":{"uuid":"f2115cc3-e15b-4719-ba3d-4a5b621f38cc","username":"brownswan360","password":"oceans","salt":"3fwTEeJC","md5":"fecab6b6dea988e7bc2e5ba943356a84","sha1":"9800b0ce89c0ed59560cb384b4f517eb0e4eb10b","sha256":"aed70774a4e2104a30e6ee6c92b0d6f4094701b1fd1d2835c4b0476db2664971"},"dob":{"date":"1978-08-27T05:58:01.142Z","age":43},"registered":{"date":"2007-12-02T20:49:59.435Z","age":14},"phone":"(311)-925-7771","cell":"(322)-696-5963","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/men/72.jpg","medium":"https://randomuser.me/api/portraits/med/men/72.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/72.jpg"},"nat":"TR"}],"info":{"seed":"2a08250002765e27","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 06:58:36,203] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210101T000000, start_date=20210310T065835, end_date=20210310T065836
+[2021-03-10 06:58:36,218] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 06:58:36,238] {local_task_job.py:118} INFO - Task exited with return code 0

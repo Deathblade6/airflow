@@ -1,0 +1,25 @@
+[2021-03-10 07:00:01,830] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-08T00:00:00+00:00 [queued]>
+[2021-03-10 07:00:01,837] {taskinstance.py:826} INFO - Dependencies all met for <TaskInstance: data_processing.extract_users 2021-01-08T00:00:00+00:00 [queued]>
+[2021-03-10 07:00:01,837] {taskinstance.py:1017} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:00:01,837] {taskinstance.py:1018} INFO - Starting attempt 1 of 1
+[2021-03-10 07:00:01,837] {taskinstance.py:1019} INFO - 
+--------------------------------------------------------------------------------
+[2021-03-10 07:00:01,846] {taskinstance.py:1038} INFO - Executing <Task(SimpleHttpOperator): extract_users> on 2021-01-08T00:00:00+00:00
+[2021-03-10 07:00:01,848] {standard_task_runner.py:51} INFO - Started process 42109 to run task
+[2021-03-10 07:00:01,862] {standard_task_runner.py:75} INFO - Running: ['airflow', 'tasks', 'run', 'data_processing', 'extract_users', '2021-01-08T00:00:00+00:00', '--job-id', '52', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/data_processing.py', '--cfg-path', '/tmp/tmp3ltxc1p9']
+[2021-03-10 07:00:01,862] {standard_task_runner.py:76} INFO - Job 52: Subtask extract_users
+[2021-03-10 07:00:02,002] {logging_mixin.py:103} INFO - Running <TaskInstance: data_processing.extract_users 2021-01-08T00:00:00+00:00 [running]> on host airflowvm
+[2021-03-10 07:00:02,219] {taskinstance.py:1230} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=data_processing
+AIRFLOW_CTX_TASK_ID=extract_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-08T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-08T00:00:00+00:00
+[2021-03-10 07:00:02,219] {http.py:106} INFO - Calling HTTP method
+[2021-03-10 07:00:02,247] {base.py:65} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: None
+[2021-03-10 07:00:02,250] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-03-10 07:00:02,826] {http.py:110} INFO - {"results":[{"gender":"female","name":{"title":"Ms","first":"Alex","last":"Dean"},"location":{"street":{"number":5027,"name":"School Lane"},"city":"Newcastle West","state":"Galway City","country":"Ireland","postcode":73820,"coordinates":{"latitude":"20.9499","longitude":"53.0996"},"timezone":{"offset":"+5:00","description":"Ekaterinburg, Islamabad, Karachi, Tashkent"}},"email":"alex.dean@example.com","login":{"uuid":"03aa8bb5-b584-40a0-9d55-7c52524e9fe6","username":"goldenkoala826","password":"emily1","salt":"tIqaNcu3","md5":"9b2a21b2d484de3c54c113f9433a6bc7","sha1":"481b8644e62f88b64fddadd47faff1e4a01b9a53","sha256":"f9c1fcbba5ab64cb2444d40eb65ca99b6d8f115e71844c98a44deecfddc0bc63"},"dob":{"date":"1963-09-05T12:28:49.590Z","age":58},"registered":{"date":"2004-11-07T01:37:11.831Z","age":17},"phone":"021-396-9841","cell":"081-395-6328","id":{"name":"PPS","value":"7376156T"},"picture":{"large":"https://randomuser.me/api/portraits/women/35.jpg","medium":"https://randomuser.me/api/portraits/med/women/35.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/35.jpg"},"nat":"IE"}],"info":{"seed":"9f8335b91bc66d85","results":1,"page":1,"version":"1.3"}}
+[2021-03-10 07:00:02,843] {taskinstance.py:1135} INFO - Marking task as SUCCESS. dag_id=data_processing, task_id=extract_users, execution_date=20210108T000000, start_date=20210310T070001, end_date=20210310T070002
+[2021-03-10 07:00:02,859] {taskinstance.py:1195} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-03-10 07:00:02,894] {local_task_job.py:118} INFO - Task exited with return code 0
